@@ -1,0 +1,200 @@
+<head>
+    <title>Shop</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+ <div id="nav">
+    <nav class="navbar navbar-default navbar-static affix-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Vibrant Soul Coaching</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="aboutme.html">About me</a></li>
+          <li><a href="products.html">Products</a></li>
+           <li><a href="calendar.html">Calendar</a></li>
+
+      
+          
+        </ul>
+      </div>
+    </div>
+    </nav>
+  </div>
+    
+
+ <section id="portfolio">
+      <div class="container">
+        <h3>Products</h3>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=GZ6V8NAALCHH6" target="_blank">
+            <div class="thumbnail">
+              <div class="caption">
+            Purchase a Car.
+            INSERT ITEM DESCRIPTION
+              </div>
+              <img src="img/gal/1.jpg" width="100%" height="100%">>
+            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CQY9EUH4G2YGC" target="_blank">
+            <div class="thumbnail">
+              <div class="caption">
+          Purchase a Tiger.
+              </div>
+              <img src="img/gal/2.jpg" width="100%" height="100%">
+            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F7UTAWABH68AU" target="_blank">
+            <div class="thumbnail">
+              <div class="caption">
+             Purchase a Bike.
+             INSERT ITEM DESCRIPTION
+              </div>
+              <img src="img/gal/3.jpg" width="100%" height="100%">
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <a href="">
+            <div class="thumbnail">
+              <div class="caption">
+              Purchase a Flamingo.
+              INSERT ITEM DESCRIPTION 
+              </div>
+              <img src="img/gal/4.jpg" width="100%" height="100%">
+            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="">
+            <div class="thumbnail">
+              <div class="caption">
+           Purchase a Bunny.
+           INSERT ITEM DESCRIPTION
+              </div>
+              <img src="img/gal/5.jpg" width="100%" height="100%">
+            </div>
+            </a>
+          </div>
+          <div class="col-md-4">
+            <a href="">
+            <div class="thumbnail">
+              <div class="caption">
+          Purchase a Truck.
+          INSERT ITEM DESCRIPTION
+              </div>
+              <img src="img/gal/6.jpg" width="100%" height="100%">
+            </div>
+            </a>
+          </div>
+        </div>
+        <a href="" class="btn btn-primary btn-lg" role="button">More</a>
+      </div>
+    </section>
+      <footer>
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <p>Designed by Matthew Pham and Kevin Palani</Palani>
+          <p>For Business Inquires: playcoding9@gmail.com</p>
+        </div>
+        <div class="col-md-3">
+          <h4>Contact</h4>
+          <div class="row">
+            <div class="col-md-1"><span class="glyphicon glyphicon-map-marker"></span></div>
+            <div class="col-md-10">Contact me</div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-1"><span class="glyphicon glyphicon-envelope"></span></div>
+            <div class="col-md-10">test@gmail.com</div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-1"><span class="glyphicon glyphicon-earphone"></span></div>
+            <div class="col-md-10">911</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <h4>Latest blogs</h4>
+          <div class="row">
+            <div class="col-md-1"><span class="glyphicon glyphicon-pencil"></span></div>
+            <div class="col-md-10">Insert Blog post</div>
+          </div><br>
+          <div class="row">
+            <div class="col-md-1"><span class="glyphicon glyphicon-pencil"></span></div>
+            <div class="col-md-10">Insert Blog post </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </footer>  
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      $(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+      $(function() {
+  //navbar affix
+  $('#nav').affix({
+    offset: {
+      top: $('header').height()
+    }
+  });
+});
+
+      $('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top+20;
+  $('body,html').animate({scrollTop:posi},700);
+})
+
+
+      $( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.thumbnail').hover(
+        function(){
+            $(this).find('.caption').fadeIn(250);
+        },
+        function(){
+            $(this).find('.caption').fadeOut(205);
+        }
+    ); 
+});
+    </script>
